@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+
+
+.modal{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    border-radius:30px;
+    box-shadow: 0px 0px 25px black;
+
+}
+
+.modal button{
+    width: 25px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 35pt;
+    z-index: 3;
+    
+}
+
+.modal #imgModal{
+    width: 142px;
+    margin: auto;
+    margin-top: 30px;
+    bottom: -28px;
+    position: relative;
+    z-index: 2;
+}
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.textInfo span{
+    padding: 10px;
+}
+
+#logo{
+    width: 264px;
+    position: fixed;
+    opacity: 0.2;
+}
